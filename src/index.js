@@ -9,5 +9,5 @@ app.get('/', (req, res) => {
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
-  console.log(`Servidor escuchando en el puerto 3001 ${PORT}`);
+  console.log(`Servidor escuchando en el puerto 3000 ${PORT}`);
 });
