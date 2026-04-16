@@ -1,5 +1,6 @@
 const express = require("express");
-
+const User = require("./models/User");
+const Producto = require("./models/Producto");
 // inicializando una app de express
 const app = express();
 
