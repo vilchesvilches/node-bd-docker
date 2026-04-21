@@ -10,5 +10,4 @@ COPY . .
 
 EXPOSE 3000
 
-# cuando ejecutas docker run
 CMD ["node", "src/index.js"]
