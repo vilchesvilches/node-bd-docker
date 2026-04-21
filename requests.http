@@ -1,0 +1,42 @@
+@baseUrl = http://localhost:81
+@api = {{baseUrl}}/api
+@json = application/json
+
+### Health check
+GET {{baseUrl}}/
+
+### Listar productos
+GET {{api}}/producto
+
+### Crear producto
+POST {{api}}/producto
+Content-Type: {{json}}
+
+{
+  "nombre": "Monitor mecanico",
+  "precio": 129.90,
+  "stock": 15,
+  "descripcion": "Switch blue",
+  "imagen": "https://example.com/teclado.jpg"
+}
+
+### Mostrar producto por ID
+# Cambia 1 por un id existente
+GET {{api}}/producto/1
+
+### Modificar producto por ID
+# Cambia 1 por un id existente
+PUT {{api}}/producto/1
+Content-Type: {{json}}
+
+{
+  "nombre": "Teclado mecanico RGB",
+  "precio": 139.90,
+  "stock": 10,
+  "descripcion": "Switch blue, version RGB",
+  "imagen": "https://example.com/teclado-rgb.jpg"
+}
+
+### Eliminar producto por ID
+# Cambia 1 por un id existente
+DELETE {{api}}/producto/1
